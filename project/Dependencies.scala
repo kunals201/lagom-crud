@@ -6,7 +6,6 @@ object Dependencies {
   val mockitoVersion = "1.10.19"
   val json4sVersion = "3.5.0"
 
-
   def compileDependencies(deps: List[ModuleID]): Seq[ModuleID] = deps map (_ % "compile")
 
   def providedDependencies(deps: List[ModuleID]): Seq[ModuleID] = deps map (_ % "provided")
